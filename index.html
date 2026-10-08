@@ -1,65 +1,144 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="Zaki Corral — portfolio, selected projects, experience and professional profile.">
-<title>Zaki Corral — Portfolio</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Zaki Corral — digital design, communication, projects and professional profile.">
+<title>Zaki Corral — Personal Portfolio</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="cursor"></div><div class="grain"></div>
-<header class="nav"><a class="logo" href="#">ZAKI<span>.</span></a><nav><a href="#work">Work</a><a href="#about">About</a><a href="#focus">Focus</a><a href="#experience">Experience</a></nav><div class="nav-actions"><a class="nav-link" href="https://www.linkedin.com/in/zakicorral/" target="_blank" rel="noopener">LinkedIn ↗</a><a class="nav-link" href="CV.pdf" target="_blank">CV ↗</a></div></header>
+<div class="grain"></div>
 
-<main>
+<div class="gateway" id="gateway">
+  <div class="gateway-top"><span>ZAKI<span class="acid">.</span></span><span>PERSONAL PORTFOLIO / 2026</span></div>
+  <div class="gateway-center">
+    <p class="kicker"><i></i> Before we start</p>
+    <h1>What brings<br><em>you here?</em></h1>
+    <p class="gateway-copy">Choose a route. I'll show you the parts of my profile that make the most sense for why you're here.</p>
+    <div class="routes">
+      <button data-route="hire"><span>01</span><strong>I'm looking to hire</strong><small>skills · CV · experience · contact</small><b>↗</b></button>
+      <button data-route="collab"><span>02</span><strong>I want to collaborate</strong><small>creative work · communication · ways to work together</small><b>↗</b></button>
+      <button data-route="curious"><span>03</span><strong>I want to know more</strong><small>personality · interests · languages · mindset</small><b>↗</b></button>
+      <button data-route="explore"><span>04</span><strong>Just show me everything</strong><small>the complete profile</small><b>↗</b></button>
+    </div>
+    <button class="skip" id="skip">skip the filter →</button>
+  </div>
+  <div class="gateway-bottom"><span>NO LOGIN · NO FORM · JUST CHOOSE</span><span>SCROLL IS LOCKED UNTIL YOU PICK A ROUTE</span></div>
+</div>
+
+<header class="nav">
+<a class="logo" href="#">ZAKI<span>.</span></a>
+<nav><a href="#about">About</a><a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#focus">Focus</a></nav>
+<div class="nav-actions"><a class="nav-link" href="https://www.linkedin.com/in/zakicorral/" target="_blank" rel="noopener">LinkedIn ↗</a><a class="nav-link" href="CV.pdf" target="_blank">CV ↗</a></div>
+</header>
+
+<main id="site">
 <section class="hero">
-<div class="hero-main"><p class="kicker"><i></i> Open to opportunities · Spain</p><h1>Ideas are cheap.<br><em>Making them real</em><br>is the work.</h1><p class="intro">I'm Zaki Corral — I work across web development, digital projects, design, communication and coordination. I learn by making and improve through real work.</p><div class="actions"><a class="btn fill" href="#work">See the work ↓</a><a class="btn" href="https://www.linkedin.com/in/zakicorral/" target="_blank" rel="noopener">LinkedIn ↗</a></div></div>
-<div class="hero-side"><div class="status"><span>01</span><b>BUILD</b><small>turning ideas into<br>working things</small></div><div class="status accent"><span>02</span><b>LEARN</b><small>getting better through<br>real projects</small></div><div class="status"><span>03</span><b>CONNECT</b><small>people, projects,<br>opportunities</small></div></div>
+<div class="hero-main">
+<p class="kicker"><i></i> Open to opportunities · Spain</p>
+<p class="route-note" id="route-note">PROFILE MODE / COMPLETE VIEW</p>
+<h1>People first.<br><em>Ideas second.</em><br>Make it real.</h1>
+<p class="intro">I'm Zaki Corral — a multilingual, adaptable and creative person working across digital design, video creation, communication, coordination and technology. I learn quickly, improvise when needed and keep looking for a way forward.</p>
+<div class="actions"><a class="btn fill" href="#about">Explore my profile ↓</a><a class="btn" href="https://www.linkedin.com/in/zakicorral/" target="_blank" rel="noopener">LinkedIn ↗</a></div>
+</div>
+<div class="hero-side">
+<div class="status"><span>01</span><b>ADAPT</b><small>comfortable learning<br>new environments quickly</small></div>
+<div class="status accent"><span>02</span><b>CREATE</b><small>digital design, video,<br>ideas and execution</small></div>
+<div class="status"><span>03</span><b>COMMUNICATE</b><small>four languages, teamwork,<br>coordination and people</small></div>
+</div>
 </section>
 
-<section class="marquee"><div>HTML <b>✦</b> CSS <b>✦</b> JAVASCRIPT <b>✦</b> DESIGN <b>✦</b> PROJECTS <b>✦</b> COMMUNICATION <b>✦</b> COORDINATION <b>✦</b> PROBLEM SOLVING <b>✦</b> HTML <b>✦</b> CSS <b>✦</b></div></section>
+<section class="marquee"><div>DIGITAL DESIGN <b>✦</b> VIDEO <b>✦</b> COMMUNICATION <b>✦</b> LANGUAGES <b>✦</b> ADAPTABILITY <b>✦</b> PROJECTS <b>✦</b> LEARNING <b>✦</b> DIGITAL DESIGN <b>✦</b> VIDEO <b>✦</b></div></section>
+
+<section id="about" class="section">
+<div class="section-label"><span>01</span><span>About me</span></div>
+<div class="about-grid">
+<div><h2>More than<br><em>a job title.</em></h2></div>
+<div class="copy">
+<p>I work best where communication, creativity and practical problem-solving meet. I have experience with digital design, video and advertising content, an online clothing store, volunteer work and hands-on technology.</p>
+<p>I'm comfortable navigating unfamiliar computer systems and adapting to new situations. My default process is simple: brainstorm, plan, work, finish, then polish and fix what needs fixing.</p>
+<div class="facts">
+<div><b>LANGUAGES</b><span>Arabic · French · English · Spanish</span></div>
+<div><b>APPROACH</b><span>Fast learner · adaptable · solution-oriented</span></div>
+<div><b>PEOPLE</b><span>Communication · fairness · respect · teamwork</span></div>
+<div><b>CREATIVE</b><span>Digital design · video creation · advertising</span></div>
+</div>
+</div>
+</div>
+</section>
+
+<section id="skills" class="section skills-section">
+<div class="section-label"><span>02</span><span>What I can bring</span></div>
+<div class="skill-grid">
+<article><span>01</span><h3>Digital design</h3><p>Visual work, digital layouts and creative content with a practical eye for presentation.</p></article>
+<article><span>02</span><h3>Video creation</h3><p>Creating video content and advertising material designed to communicate an idea quickly.</p></article>
+<article><span>03</span><h3>Communication</h3><p>Professional communication, coordination and working with different kinds of people.</p></article>
+<article><span>04</span><h3>Adaptability</h3><p>Put me somewhere unfamiliar and I'll learn the environment instead of waiting for it to become familiar.</p></article>
+<article><span>05</span><h3>Problem solving</h3><p>I look for the source of an issue, try to solve it, learn from the result and escalate when expertise is needed.</p></article>
+<article><span>06</span><h3>Learning</h3><p>I learn quickly and prefer practical learning: understand it, use it, improve it.</p></article>
+</div>
+</section>
+
+<section id="experience" class="section experience">
+<div class="section-label"><span>03</span><span>Experience & responsibility</span></div>
+<div class="experience-grid">
+<div><h2>People,<br><em>projects, responsibility.</em></h2></div>
+<div class="timeline">
+<article><span>01</span><div><h3>Algerian United Foundation (AUF)</h3><p>Volunteer experience in a well-known Algerian volunteering organisation, working around people, communication and community activity.</p></div></article>
+<article><span>02</span><div><h3>Online clothing store</h3><p>Ran an online store selling clothes, gaining practical exposure to digital presentation, customers and the realities of running something independently.</p></div></article>
+<article><span>03</span><div><h3>Digital creative work</h3><p>Experience creating digital designs, videos and advertising content, combining communication with visual execution.</p></div></article>
+</div>
+</div>
+</section>
 
 <section id="focus" class="focus-band">
 <div class="focus-inner">
-<div class="section-label"><span>00</span><span>Current signal</span></div>
+<div class="section-label"><span>04</span><span>Current direction</span></div>
 <div class="focus-grid">
-<div class="focus-copy"><p class="eyebrow">WHERE I AM NOW</p><h2>Building the<br><em>next version.</em></h2><p>I'm at the stage where every project is part of the learning process: stronger web fundamentals, better design decisions and more professional communication.</p></div>
+<div class="focus-copy"><p class="eyebrow">WHAT I'M WORKING TOWARD</p><h2>Learning for the<br><em>next chapter.</em></h2><p>I'm currently interested in languages, endurance training, general knowledge, history and constitutional knowledge. Long-term, I want to become fluent in at least ten languages and build a future around service, discipline and meaningful work.</p></div>
 <div class="focus-console">
 <div class="console-top"><span>LIVE / 2026</span><span>STATUS: ACTIVE</span></div>
-<div class="console-line"><span>01</span><b>WEB</b><i>████████░░</i></div>
-<div class="console-line"><span>02</span><b>DESIGN</b><i>███████░░░</i></div>
-<div class="console-line"><span>03</span><b>COMMUNICATION</b><i>█████████░</i></div>
-<div class="console-line"><span>04</span><b>PROJECTS</b><i>████████░░</i></div>
-<p class="console-note">// progress is measured in things shipped.</p>
+<div class="console-line"><span>01</span><b>LANGUAGES</b><i>███████░░░</i></div>
+<div class="console-line"><span>02</span><b>ENDURANCE</b><i>███████░░░</i></div>
+<div class="console-line"><span>03</span><b>KNOWLEDGE</b><i>████████░░</i></div>
+<div class="console-line"><span>04</span><b>DISCIPLINE</b><i>████████░░</i></div>
+<p class="console-note">// keep learning. keep moving.</p>
 </div>
 </div>
 </div>
 </section>
 
-<section id="work" class="section"><div class="section-label"><span>01</span><span>Selected work</span></div><div class="work-head"><h2>Things I've<br><em>actually built.</em></h2><p>No stock mockups. No imaginary case studies. Just projects that exist.</p></div>
-<div class="projects">
-<a class="project large" href="https://github.com/zakicorral/Ibtissem-love-letter" target="_blank" rel="noopener"><div class="visual v-love"><span>01 / WEB EXPERIENCE</span><strong>♥</strong><label>INTERACTIVE<br>LOVE LETTER</label></div><div class="project-meta"><h3>Ibtissem Love Letter</h3><span>↗</span><p>A personal interactive experience combining code, animation and storytelling.</p></div></a>
-<a class="project" href="https://github.com/zakicorral/zacks-game" target="_blank" rel="noopener"><div class="visual v-game"><span>02 / GAME</span><strong>PLAY<span>_</span></strong></div><div class="project-meta"><h3>Zack's Game</h3><span>↗</span><p>A playable project built from a simple idea.</p></div></a>
-<a class="project" href="https://github.com/zakicorral/word-search" target="_blank" rel="noopener"><div class="visual v-word"><span>03 / JAVASCRIPT</span><strong>W<br>O<br>R<br>D</strong><b>SEARCH</b></div><div class="project-meta"><h3>Word Search</h3><span>↗</span><p>Interactive logic, interface and browser-based play.</p></div></a>
-</div></section>
+<section class="section personality">
+<div class="section-label"><span>05</span><span>The person behind the profile</span></div>
+<div class="personality-grid">
+<div><h2>Serious at work.<br><em>Random after.</em></h2></div>
+<div class="copy">
+<p>I care about clear communication, fairness and treating colleagues with the same respect regardless of who they are.</p>
+<p>Outside work, I'm much more relaxed. My interests jump between Spanish Marines, military topics, video games, films, sport, languages, cultures and horse riding.</p>
+<p>One thing that is difficult to put on a CV: I'm naturally quite random. I improvise, experiment and sometimes find solutions by taking an unexpected route.</p>
+</div>
+</div>
+</section>
 
-<section id="about" class="split section"><div class="section-label"><span>02</span><span>About me</span></div><div class="about-grid"><h2>Still early.<br><em>Already moving.</em></h2><div class="copy"><p>My background sits between people and technology: project coordination, communication, volunteering, design and hands-on web development.</p><p>I don't want a portfolio full of claims. I want a trail of things I made, improved and learned from.</p><div class="facts"><div><b>WEB</b><span>HTML · CSS · JavaScript</span></div><div><b>PEOPLE</b><span>Communication · teamwork · coordination</span></div><div><b>CREATIVE</b><span>Design · digital experiences · experimentation</span></div></div></div></div></section>
-
-<section class="principles section">
-<div class="section-label"><span>02</span><span>Working principles</span></div>
+<section class="section principles">
+<div class="section-label"><span>06</span><span>How I work</span></div>
 <div class="principles-grid">
-<article><span>01</span><h3>Make it real.</h3><p>I prefer a working prototype over an idea that only looks good on paper.</p></article>
-<article><span>02</span><h3>Keep learning.</h3><p>Every build is a chance to understand something I could not do before.</p></article>
-<article><span>03</span><h3>Stay useful.</h3><p>Technical skills matter more when they help people, teams or projects move forward.</p></article>
+<article><span>01</span><h3>Communicate.</h3><p>Bad communication creates problems that good communication can often prevent.</p></article>
+<article><span>02</span><h3>Be fair.</h3><p>Respect colleagues, avoid harassment and bullying, and treat people equally.</p></article>
+<article><span>03</span><h3>Find the source.</h3><p>When something breaks, understand why, try to fix it, learn from it and ask for expertise when necessary.</p></article>
 </div>
 </section>
 
-<section id="experience" class="section experience"><div class="section-label"><span>03</span><span>What I bring</span></div><div class="experience-grid"><h2>Useful beyond<br><em>the screen.</em></h2><div class="timeline"><article><span>01</span><div><h3>Project coordination</h3><p>Organising people, tasks and communication around real projects and volunteer work.</p></div></article><article><span>02</span><div><h3>External relations</h3><p>Communication, relationship building and representing teams in collaborative environments.</p></div></article><article><span>03</span><div><h3>Technical growth</h3><p>Building a stronger foundation through hands-on web projects and experimentation.</p></div></article></div></div></section>
+<section class="statement"><p>IF YOU GIVE ME A CHANCE,<br>I WILL <em>KEEP MOVING.</em></p><a href="CV.pdf" target="_blank">View the CV ↗</a></section>
 
-<section class="statement"><p>THE PORTFOLIO IS<br>THE <em>PROOF.</em></p><a href="#work">Keep scrolling ↓</a></section>
-
-<section class="contact"><p class="kicker">Have a project, opportunity or question?</p><h2>Let's make<br><em>something real.</em></h2><div><a href="https://www.linkedin.com/in/zakicorral/" target="_blank" rel="noopener">LinkedIn ↗</a><a href="CV.pdf" target="_blank">View CV ↗</a></div></section>
+<section class="contact">
+<p class="kicker">For opportunities, collaboration or a conversation</p>
+<h2>Let's make<br><em>something real.</em></h2>
+<div><a href="https://www.linkedin.com/in/zakicorral/" target="_blank" rel="noopener">LinkedIn ↗</a><a href="CV.pdf" target="_blank">View CV ↗</a></div>
+</section>
 </main>
 
 <footer><span>ZAKI CORRAL · 2026</span><span>BUILT WITH HTML / CSS / JS</span></footer>
