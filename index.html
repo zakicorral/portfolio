@@ -1,147 +1,99 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="Zaki Corral — digital design, communication, projects and professional profile.">
-<title>Zaki Corral — Personal Portfolio</title>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Zaki Corral — digital design, video, communication and adaptable creative work.">
+<title>Zaki Corral — Zaki Corral</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&family=Syne:wght@500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="lock">
 <div class="grain"></div>
 
 <div class="gateway" id="gateway">
-  <div class="gateway-top"><span>ZAKI<span class="acid">.</span></span><span>PERSONAL PORTFOLIO / 2026</span></div>
+  <div class="gateway-top"><strong>ZAKI<span>.</span></strong><small>PERSONAL / 2026</small></div>
   <div class="gateway-center">
-    <p class="kicker"><i></i> Before we start</p>
-    <h1>What brings<br><em>you here?</em></h1>
-    <p class="gateway-copy">Choose a route. I'll show you the parts of my profile that make the most sense for why you're here.</p>
+    <div class="gateway-orbit"><div class="orbit-dot"></div><div class="orbit-ring"></div><div class="orbit-ring ring-2"></div></div>
+    <p class="kicker"><i></i> Choose your view</p>
+    <h1>Why are<br><em>you here?</em></h1>
+    <p class="gateway-copy">Pick the reason you're visiting. The portfolio will adapt to you.</p>
     <div class="routes">
-      <button data-route="hire"><span>01</span><strong>I'm looking to hire</strong><small>skills · CV · experience · contact</small><b>↗</b></button>
-      <button data-route="collab"><span>02</span><strong>I want to collaborate</strong><small>creative work · communication · ways to work together</small><b>↗</b></button>
-      <button data-route="curious"><span>03</span><strong>I want to know more</strong><small>personality · interests · languages · mindset</small><b>↗</b></button>
-      <button data-route="explore"><span>04</span><strong>Just show me everything</strong><small>the complete profile</small><b>↗</b></button>
+      <button data-route="hire"><span>01</span><strong>Hire me</strong><small>CV · skills · experience</small><b>↗</b><div class="route-shape brief"></div></button>
+      <button data-route="collab"><span>02</span><strong>Collaborate</strong><small>creative · communication · ideas</small><b>↗</b><div class="route-shape collab"></div></button>
+      <button data-route="curious"><span>03</span><strong>Know me</strong><small>personality · interests · mindset</small><b>↗</b><div class="route-shape person"></div></button>
+      <button data-route="explore"><span>04</span><strong>Explore everything</strong><small>full profile · no filter</small><b>↗</b><div class="route-shape all"></div></button>
     </div>
-    <button class="skip" id="skip">skip the filter →</button>
   </div>
-  <div class="gateway-bottom"><span>NO LOGIN · NO FORM · JUST CHOOSE</span><span>SCROLL IS LOCKED UNTIL YOU PICK A ROUTE</span></div>
+  <div class="gateway-bottom"><span>NO LOGIN · YOUR CHOICE CHANGES THE PAGE</span><span>SCROLL UNLOCKS AFTER SELECTION</span></div>
 </div>
 
 <header class="nav">
 <a class="logo" href="#">ZAKI<span>.</span></a>
 <nav><a href="#about">About</a><a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#focus">Focus</a></nav>
-<div class="nav-actions"><a class="nav-link" href="https://www.linkedin.com/in/zakicorral/" target="_blank" rel="noopener">LinkedIn ↗</a><a class="nav-link" href="CV.pdf" target="_blank">CV ↗</a></div>
+<div class="nav-actions"><a href="https://www.linkedin.com/in/zakicorral/" target="_blank" rel="noopener">LinkedIn ↗</a><a href="CV.pdf" target="_blank">CV ↗</a></div>
 </header>
 
 <main id="site">
 <section class="hero">
 <div class="hero-main">
-<p class="kicker"><i></i> Open to opportunities · Spain</p>
-<p class="route-note" id="route-note">PROFILE MODE / COMPLETE VIEW</p>
-<h1>People first.<br><em>Ideas second.</em><br>Make it real.</h1>
-<p class="intro">I'm Zaki Corral — a multilingual, adaptable and creative person working across digital design, video creation, communication, coordination and technology. I learn quickly, improvise when needed and keep looking for a way forward.</p>
-<div class="actions"><a class="btn fill" href="#about">Explore my profile ↓</a><a class="btn" href="https://www.linkedin.com/in/zakicorral/" target="_blank" rel="noopener">LinkedIn ↗</a></div>
+<p class="kicker"><i></i> <span id="mode-label">Open to opportunities · Spain</span></p>
+<div class="mode-chip" id="mode-chip">COMPLETE VIEW</div>
+<h1 id="hero-title">People first.<br><em>Ideas second.</em><br>Make it real.</h1>
+<p class="intro" id="hero-intro">I'm Zaki Corral — a multilingual, adaptable and creative person working across digital design, video creation, communication, coordination and technology.</p>
+<div class="actions"><a class="btn fill" href="#about">Explore ↓</a><a class="btn" href="https://www.linkedin.com/in/zakicorral/" target="_blank" rel="noopener">LinkedIn ↗</a></div>
 </div>
-<div class="hero-side">
-<div class="status"><span>01</span><b>ADAPT</b><small>comfortable learning<br>new environments quickly</small></div>
-<div class="status accent"><span>02</span><b>CREATE</b><small>digital design, video,<br>ideas and execution</small></div>
-<div class="status"><span>03</span><b>COMMUNICATE</b><small>four languages, teamwork,<br>coordination and people</small></div>
+<div class="hero-visual"><div class="visual-card"><span>PROFILE / 01</span><div class="visual-mark">Z</div><div class="visual-bottom"><b>ADAPT</b><small>learn · create · solve</small></div></div></div>
+</section>
+
+<section class="marquee"><div>DIGITAL DESIGN <b>✦</b> VIDEO <b>✦</b> COMMUNICATION <b>✦</b> LANGUAGES <b>✦</b> ADAPTABILITY <b>✦</b> PROBLEM SOLVING <b>✦</b> LEARNING <b>✦</b> </div></section>
+
+<section id="about" class="section route-section">
+<div class="section-label"><span>01</span><span>About</span></div>
+<div class="about-visual"><div class="number">01</div><div class="about-stamp">ZAKI<br>CORRAL<br><i>PERSONAL<br>PROFILE</i></div><div class="cross"></div></div>
+<div class="about-grid"><h2>More than<br><em>a job title.</em></h2><div class="copy"><p>I work where communication, creativity and practical problem-solving meet. I adapt quickly to unfamiliar systems and environments, learn by doing and keep looking for a way forward.</p><div class="facts"><div><b>LANGUAGES</b><span>Arabic · French · English · Spanish</span></div><div><b>CREATIVE</b><span>Digital design · video · advertising</span></div><div><b>APPROACH</b><span>Brainstorm → plan → work → polish</span></div></div></div></div>
+</section>
+
+<section id="skills" class="section route-section">
+<div class="section-label"><span>02</span><span>What I bring</span></div>
+<div class="visual-grid">
+<article class="visual-tile tile-a"><span>01 / CREATE</span><strong>Digital<br>design</strong><i>✦</i></article>
+<article class="visual-tile tile-b"><span>02 / MOTION</span><strong>Video<br>creation</strong><i>▶</i></article>
+<article class="visual-tile tile-c"><span>03 / PEOPLE</span><strong>Communi<br>cation</strong><i>◎</i></article>
+<article class="visual-tile tile-d"><span>04 / ADAPT</span><strong>Learn<br>fast</strong><i>↗</i></article>
+<article class="visual-tile tile-e"><span>05 / SOLVE</span><strong>Find the<br>source</strong><i>⌁</i></article>
+<article class="visual-tile tile-f"><span>06 / GROW</span><strong>Keep<br>learning</strong><i>+</i></article>
 </div>
 </section>
 
-<section class="marquee"><div>DIGITAL DESIGN <b>✦</b> VIDEO <b>✦</b> COMMUNICATION <b>✦</b> LANGUAGES <b>✦</b> ADAPTABILITY <b>✦</b> PROJECTS <b>✦</b> LEARNING <b>✦</b> DIGITAL DESIGN <b>✦</b> VIDEO <b>✦</b></div></section>
-
-<section id="about" class="section">
-<div class="section-label"><span>01</span><span>About me</span></div>
-<div class="about-grid">
-<div><h2>More than<br><em>a job title.</em></h2></div>
-<div class="copy">
-<p>I work best where communication, creativity and practical problem-solving meet. I have experience with digital design, video and advertising content, an online clothing store, volunteer work and hands-on technology.</p>
-<p>I'm comfortable navigating unfamiliar computer systems and adapting to new situations. My default process is simple: brainstorm, plan, work, finish, then polish and fix what needs fixing.</p>
-<div class="facts">
-<div><b>LANGUAGES</b><span>Arabic · French · English · Spanish</span></div>
-<div><b>APPROACH</b><span>Fast learner · adaptable · solution-oriented</span></div>
-<div><b>PEOPLE</b><span>Communication · fairness · respect · teamwork</span></div>
-<div><b>CREATIVE</b><span>Digital design · video creation · advertising</span></div>
-</div>
-</div>
+<section id="experience" class="section route-section">
+<div class="section-label"><span>03</span><span>Experience</span></div>
+<div class="experience-cards">
+<article><div class="exp-icon">AUF</div><div><small>VOLUNTEERING</small><h3>Algerian United Foundation</h3><p>Volunteer experience around people, communication and community activity.</p></div><b>01</b></article>
+<article><div class="exp-icon">SHOP</div><div><small>INDEPENDENT</small><h3>Online clothing store</h3><p>Practical experience with digital presentation, customers and running something independently.</p></div><b>02</b></article>
+<article><div class="exp-icon">PLAY</div><div><small>CREATIVE</small><h3>Digital creative work</h3><p>Design, video and advertising content combining visual execution with communication.</p></div><b>03</b></article>
 </div>
 </section>
 
-<section id="skills" class="section skills-section">
-<div class="section-label"><span>02</span><span>What I can bring</span></div>
-<div class="skill-grid">
-<article><span>01</span><h3>Digital design</h3><p>Visual work, digital layouts and creative content with a practical eye for presentation.</p></article>
-<article><span>02</span><h3>Video creation</h3><p>Creating video content and advertising material designed to communicate an idea quickly.</p></article>
-<article><span>03</span><h3>Communication</h3><p>Professional communication, coordination and working with different kinds of people.</p></article>
-<article><span>04</span><h3>Adaptability</h3><p>Put me somewhere unfamiliar and I'll learn the environment instead of waiting for it to become familiar.</p></article>
-<article><span>05</span><h3>Problem solving</h3><p>I look for the source of an issue, try to solve it, learn from the result and escalate when expertise is needed.</p></article>
-<article><span>06</span><h3>Learning</h3><p>I learn quickly and prefer practical learning: understand it, use it, improve it.</p></article>
-</div>
+<section id="focus" class="focus-band route-section">
+<div class="focus-inner"><div class="section-label"><span>04</span><span>Current direction</span></div>
+<div class="focus-grid"><div><p class="eyebrow">NEXT CHAPTER</p><h2>Learning for the<br><em>long game.</em></h2><p class="focus-text">Languages, endurance, general knowledge, history and constitutional knowledge. Long-term goal: become fluent in at least ten languages and build a future around service, discipline and meaningful work.</p></div>
+<div class="radar"><div class="radar-circle r1"></div><div class="radar-circle r2"></div><div class="radar-circle r3"></div><div class="radar-line"></div><div class="radar-dot"></div><span class="rlabel l1">LANGUAGES</span><span class="rlabel l2">ENDURANCE</span><span class="rlabel l3">KNOWLEDGE</span><span class="rlabel l4">DISCIPLINE</span></div></div></div>
 </section>
 
-<section id="experience" class="section experience">
-<div class="section-label"><span>03</span><span>Experience & responsibility</span></div>
-<div class="experience-grid">
-<div><h2>People,<br><em>projects, responsibility.</em></h2></div>
-<div class="timeline">
-<article><span>01</span><div><h3>Algerian United Foundation (AUF)</h3><p>Volunteer experience in a well-known Algerian volunteering organisation, working around people, communication and community activity.</p></div></article>
-<article><span>02</span><div><h3>Online clothing store</h3><p>Ran an online store selling clothes, gaining practical exposure to digital presentation, customers and the realities of running something independently.</p></div></article>
-<article><span>03</span><div><h3>Digital creative work</h3><p>Experience creating digital designs, videos and advertising content, combining communication with visual execution.</p></div></article>
-</div>
-</div>
+<section id="personality" class="section route-section personal-only">
+<div class="section-label"><span>05</span><span>The person</span></div>
+<div class="person-hero"><h2>Serious at work.<br><em>Random after.</em></h2><div class="interest-cloud"><span>MILITARY</span><span>GAMES</span><span>LANGUAGES</span><span>SPORT</span><span>FILMS</span><span>CULTURES</span><span>HORSE RIDING</span></div></div>
 </section>
 
-<section id="focus" class="focus-band">
-<div class="focus-inner">
-<div class="section-label"><span>04</span><span>Current direction</span></div>
-<div class="focus-grid">
-<div class="focus-copy"><p class="eyebrow">WHAT I'M WORKING TOWARD</p><h2>Learning for the<br><em>next chapter.</em></h2><p>I'm currently interested in languages, endurance training, general knowledge, history and constitutional knowledge. Long-term, I want to become fluent in at least ten languages and build a future around service, discipline and meaningful work.</p></div>
-<div class="focus-console">
-<div class="console-top"><span>LIVE / 2026</span><span>STATUS: ACTIVE</span></div>
-<div class="console-line"><span>01</span><b>LANGUAGES</b><i>███████░░░</i></div>
-<div class="console-line"><span>02</span><b>ENDURANCE</b><i>███████░░░</i></div>
-<div class="console-line"><span>03</span><b>KNOWLEDGE</b><i>████████░░</i></div>
-<div class="console-line"><span>04</span><b>DISCIPLINE</b><i>████████░░</i></div>
-<p class="console-note">// keep learning. keep moving.</p>
-</div>
-</div>
-</div>
-</section>
-
-<section class="section personality">
-<div class="section-label"><span>05</span><span>The person behind the profile</span></div>
-<div class="personality-grid">
-<div><h2>Serious at work.<br><em>Random after.</em></h2></div>
-<div class="copy">
-<p>I care about clear communication, fairness and treating colleagues with the same respect regardless of who they are.</p>
-<p>Outside work, I'm much more relaxed. My interests jump between Spanish Marines, military topics, video games, films, sport, languages, cultures and horse riding.</p>
-<p>One thing that is difficult to put on a CV: I'm naturally quite random. I improvise, experiment and sometimes find solutions by taking an unexpected route.</p>
-</div>
-</div>
-</section>
-
-<section class="section principles">
+<section id="principles" class="section route-section personal-only">
 <div class="section-label"><span>06</span><span>How I work</span></div>
-<div class="principles-grid">
-<article><span>01</span><h3>Communicate.</h3><p>Bad communication creates problems that good communication can often prevent.</p></article>
-<article><span>02</span><h3>Be fair.</h3><p>Respect colleagues, avoid harassment and bullying, and treat people equally.</p></article>
-<article><span>03</span><h3>Find the source.</h3><p>When something breaks, understand why, try to fix it, learn from it and ask for expertise when necessary.</p></article>
-</div>
+<div class="principle-strip"><div><b>01</b><strong>COMMUNICATE</strong><small>Clear communication matters.</small></div><div><b>02</b><strong>BE FAIR</strong><small>Respect people equally.</small></div><div><b>03</b><strong>FIND THE SOURCE</strong><small>Understand. Fix. Learn. Move.</small></div></div>
 </section>
 
-<section class="statement"><p>IF YOU GIVE ME A CHANCE,<br>I WILL <em>KEEP MOVING.</em></p><a href="CV.pdf" target="_blank">View the CV ↗</a></section>
-
-<section class="contact">
-<p class="kicker">For opportunities, collaboration or a conversation</p>
-<h2>Let's make<br><em>something real.</em></h2>
-<div><a href="https://www.linkedin.com/in/zakicorral/" target="_blank" rel="noopener">LinkedIn ↗</a><a href="CV.pdf" target="_blank">View CV ↗</a></div>
-</section>
+<section class="statement"><div><span>THE POINT</span><p>Give me a problem.<br><em>I'll find a way forward.</em></p></div><a href="CV.pdf" target="_blank">VIEW CV ↗</a></section>
+<section class="contact"><p class="kicker">Opportunities · collaboration · conversation</p><h2>Let's make<br><em>something real.</em></h2><div><a href="https://www.linkedin.com/in/zakicorral/" target="_blank" rel="noopener">LinkedIn ↗</a><a href="CV.pdf" target="_blank">CV ↗</a></div></section>
 </main>
-
-<footer><span>ZAKI CORRAL · 2026</span><span>BUILT WITH HTML / CSS / JS</span></footer>
+<footer><span>ZAKI CORRAL · 2026</span><span>HTML / CSS / JS</span></footer>
 <script src="script.js"></script>
-</body>
-</html>
+</body></html>
